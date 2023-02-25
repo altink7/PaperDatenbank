@@ -23,6 +23,46 @@ public class PaperDB {
     int SeitenAnzahl;
     ReferenceArrayList Referenzen;
 
+    public String getAutor() {
+        return Autor;
+    }
+
+    public void setAutor(String autor) {
+        Autor = autor;
+    }
+
+    public String getTitel() {
+        return Titel;
+    }
+
+    public void setTitel(String titel) {
+        Titel = titel;
+    }
+
+    public Date getDatum() {
+        return Datum;
+    }
+
+    public void setDatum(Date datum) {
+        Datum = datum;
+    }
+
+    public int getSeitenAnzahl() {
+        return SeitenAnzahl;
+    }
+
+    public void setSeitenAnzahl(int seitenAnzahl) {
+        SeitenAnzahl = seitenAnzahl;
+    }
+
+    public ReferenceArrayList getReferenzen() {
+        return Referenzen;
+    }
+
+    public void setReferenzen(ReferenceArrayList referenzen) {
+        Referenzen = referenzen;
+    }
+
     public static PaperDB create(String Autor, String Titel, Date Datum, int SeitenAnzahl){
         PaperDB p =new PaperDB();
         p.Autor=Autor;

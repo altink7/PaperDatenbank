@@ -2,17 +2,7 @@ package at.altin;
 import java.util.Objects;
 //Hier befindet sich alles rundum Referenzen + Graph
 
-/***
- * This class is used to create a reference array list.
- * It contains the data and the size.
- * @author Altin
- * @version 1.0
- */
-class ReferenceArrayList{
-        Paper[] data;
-        int size=0;
-    }
-    public class Paper {
+public class Paper {
          PaperDB reference_ID;
 
         public static Paper create(PaperDB reference_ID){
